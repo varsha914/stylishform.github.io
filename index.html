@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-heading">Personal and Educational Details</h2>
+        <form action="message.html">
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Your age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Your password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="repassword">Re-enter Password:</label>
+                    <input type="repassword" id="repassword" name="repassword" placeholder="Your password" required>
+                </div>
+            </fieldset>
+            <br><br>
+
+            <!-- Educational Details -->
+            <fieldset>
+                <legend>Educational Details</legend>
+
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <div class="department-radio">
+                        <label for="cse">
+                            <input type="radio" id="cse" name="department" value="CSE"> CSE
+                        </label>
+                        <label for="ec">
+                            <input type="radio" id="ec" name="department" value="EC"> EC
+                        </label>
+                        <label for="civil">
+                            <input type="radio" id="civil" name="department" value="Civil"> Civil
+                        </label>
+                        <label for="me">
+                            <input type="radio" id="me" name="department" value="ME"> ME
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Skills:</label>
+                    <div class="skills-checkboxes">
+                       <label for="skill-html">
+                            <input type="checkbox" id="skill-html" name="skills" value="HTML"> HTML
+                        </label>
+                        <label for="skill-java">
+                            <input type="checkbox" id="skill-java" name="skills" value="Java"> Java
+                        </label>
+                        <label for="skill-python">
+                            <input type="checkbox" id="skill-python" name="skills" value="Python"> Python
+                        </label>
+                        <label for="skill-react">
+                            <input type="checkbox" id="skill-react" name="skills" value="React"> React
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="graduation-year">Year of Graduation:</label>
+                    <input type="text" id="graduation-year" name="graduation-year" placeholder="Year of graduation" list="graduation-years" required>
+                    <datalist id="graduation-years">
+                        <option value="2019">
+                        <option value="2020">
+                        <option value="2021">
+                        <option value="2022">
+                        <option value="2023">
+                    </datalist>
+                </div>
+            </fieldset>
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
